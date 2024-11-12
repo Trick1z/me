@@ -1,0 +1,121 @@
+body {
+    margin: 20px 0;
+    padding: 20px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: radial-gradient(circle, rgba(113, 14, 138, 0.6) 0%,
+            /* สีม่วงอ่อนตรงกลาง */
+            rgba(0, 0, 0, 1) 70%);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    .w {
+        color: white;
+    }
+
+    .container {
+        background-color: white;
+        width: 55rem;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px rgb(238, 238, 238);
+
+
+        .imgs {
+            width: 50rem;
+            height: auto;
+        }
+
+
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .button:hover {
+
+        background-color: #0d6efd;
+        color: white;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        width: 70rem;
+        color: white;
+
+        h1 {
+            margin: 5px 0;
+        }
+
+        h6 {
+            margin: 10px 0;
+        }
+    }
+
+    .empty {
+        padding: 5rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons-gruop {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .img-icon {
+        width: 4rem;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    .git-icon {
+        width: 16rem;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    .skill-tools {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: nowrap;
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: stretch;
+        }
+    }
+}
+
+
+
+.top-cards {
+    display: flex;
+
+
+}

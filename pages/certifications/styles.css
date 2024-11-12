@@ -1,0 +1,36 @@
+body {
+    margin: 20px 0;
+    padding: 20px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: radial-gradient(circle, rgba(113, 14, 138, 0.6) 0%,
+            /* สีม่วงอ่อนตรงกลาง */
+            rgba(0, 0, 0, 1) 70%);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    .w {
+        color: white;
+    }
+
+    .container {
+
+        max-width: 56rem;
+        .cers {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            .cer-img {
+                border-radius: 10px;
+                margin: 20px 0;
+            }
+
+        }
+    }
+}
