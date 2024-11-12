@@ -18,9 +18,19 @@ body {
         color: white;
     }
 
+    .glow {
+        color: white;
+        /* background-color: aliceblue; */
+    }
+
+    .glow:hover {
+        text-shadow: 0 0 30px #ffffff;
+    }
+
     .container {
 
         max-width: 56rem;
+
         .cers {
             display: flex;
             flex-direction: column;
@@ -29,6 +39,13 @@ body {
             .cer-img {
                 border-radius: 10px;
                 margin: 20px 0;
+                box-shadow: 4px 4px 3px #b8b8b8;
+            }
+            .cer-img:hover {
+                border-radius: 10px;
+                margin: 20px 0;
+                box-shadow: 4px 4px 30px #b8b8b8;
+                transition: 1s;
             }
 
         }

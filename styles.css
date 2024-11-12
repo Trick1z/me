@@ -119,3 +119,12 @@ body {
 
 
 }
+
+.glow{
+color: white;
+/* background-color: aliceblue; */
+}
+
+.glow:hover{
+    text-shadow: 0 0 30px #ffffff;
+}

@@ -6,6 +6,9 @@ function PageNavigator() {
     this.certifications = function () {
         return  window.location.href = "./pages/certifications/index.html"; 
     }
+    this.portFolio = function () {
+        return  window.location.href = "./pages/portFolio/index.html"; 
+    }
 }
 const navigator = new PageNavigator();
 
