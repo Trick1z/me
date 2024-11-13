@@ -20,7 +20,7 @@ body {
 
     .container {
         background-color: white;
-        width: 55rem;
+        width: 50.8rem;
         border-radius: 5px;
         box-shadow: 3px 3px 2px rgb(238, 238, 238);
 
@@ -120,11 +120,11 @@ body {
 
 }
 
-.glow{
-color: white;
-/* background-color: aliceblue; */
+.glow {
+    color: white;
+    /* background-color: aliceblue; */
 }
 
-.glow:hover{
+.glow:hover {
     text-shadow: 0 0 30px #ffffff;
 }
