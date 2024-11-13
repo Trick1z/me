@@ -22,7 +22,7 @@ function PageNavigator() {
 function downloadPDF() {
   //  "./assets/downloads/PortFolio.pdf"
   this.resume = function () {
-    const pdfUrl = "./assets/downloads/Portfolio.pdf"; // Path to your PDF file
+    const pdfUrl = "./assets/downloads/resume.pdf"; // Path to your PDF file
 
     // Fetch the PDF file
     fetch(pdfUrl)
