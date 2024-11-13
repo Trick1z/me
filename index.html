@@ -14,6 +14,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -24,10 +26,15 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!--end bootstrap -->
   </head>
   <body>
+
+    <div class="background blue"></div>
+    
     <!-- Navbar  -->
     <div class="nav">
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -83,7 +90,11 @@
     <!-- resume detail -->
 
     <div class="resume">
-      <div style="margin: 20px 0; display: flex; flex-direction: row-reverse">
+      <div style="margin: 20px 0; display: flex; flex-direction: row-reverse"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="500">
         <button
           onclick="downloadButton()"
           type="button"
@@ -92,8 +103,12 @@
           Download Resume
         </button>
       </div>
-      <div class="container">
-        <div>
+      <div class="container" 
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="500">
+        <div >
           <!-- <img class="imgs" src="./assets/img/Portfolio.jpg" alt="" /> -->
           <img class="imgs" src="./assets/blue professional modern CV resume.png" alt="" />
         </div>
@@ -103,8 +118,13 @@
      <!-- fix -->
 
     <!-- About me Detail -->
-    <div class="aboutMe">
+    <div class="aboutMe"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="500" >
       <h1>About Me</h1>
+      <div class="lorem">
       <h4>
         <!-- Hi, my name's Sarotchin Inthirat. I'm 26 years old. I graduated from Udon Thani Rajabhat University, majoring in Computer Communication Engineering. Throughout my studies, I've gained valuable skills in web development with and without frameworks such as Angular Vue bootstrap Tailwind  coreui devextream , and create Restful APIs using Python (FastAPI) and .NET C# ORM, as well as designing MySQL databases, ProsgreSQL.  -->
 
@@ -127,21 +147,39 @@
         innovative solutions through coding.
       </h6>
     </div>
+    </div>
     <!--end  About me Detail -->
     <div class="skill-tools">
       <div class="skill">
-        <h1 style="display: flex; margin: 30px 0 10px 0" class="w">SKILL</h1>
+        <h1 style="display: flex; margin: 30px 0 10px 0" class="w" 
+        data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-delay="50"
+     data-aos-duration="500" >
+        SKILL</h1>
         <div style="display: flex; flex-direction: column" class="skill w">
           <div class="icons-gruop">
-            <div class="html icons">
+            <div class="html icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="150">
               <img class="img-icon" src="./assets/icon/html-5.png" alt="" />
               <p>HTML</p>
             </div>
-            <div class="css icons">
+            <div class="css icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="300">
               <img class="img-icon" src="./assets/icon/css-3.png" alt="" />
               <p>CSS</p>
             </div>
-            <div class="js icons">
+            <div class="js icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="450">
               <img
                 class="img-icon"
                 style="border-radius: 10%"
@@ -150,48 +188,88 @@
               />
               <p>JavaScript</p>
             </div>
-            <div class="ts icons">
+            <div class="ts icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="600">
               <img class="img-icon" src="./assets/icon/typescript.png" alt="" />
               <p>TypeScript</p>
             </div>
-            <div class="c+ icons">
+            <div class="c+ icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="750">
               <img class="img-icon" src="./assets/icon/c-.png" alt="" />
               <p>C++</p>
             </div>
           </div>
 
           <div class="icons-gruop">
-            <div class="c# icons">
+            <div class="c# icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="150">
               <img class="img-icon" src="./assets/icon/c-sharp.png" alt="" />
               <p>C#</p>
             </div>
-            <div class="jv icons">
+            <div class="jv icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="300">
               <img class="img-icon" src="./assets/icon/java.png" alt="" />
               <p>Java</p>
             </div>
-            <div class="flutter icons">
+            <div class="flutter icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="450">
               <img class="img-icon" src="./assets/icon/flutter.png" alt="" />
               <p>Flutter</p>
             </div>
-            <div class="dart icons">
+            <div class="dart icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="600">
               <img class="img-icon" src="./assets/icon/dartt.png" alt="" />
               <p>Dart</p>
             </div>
-            <div class="python icons">
+            <div class="python icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="750">
               <img class="img-icon" src="./assets/icon/python.png" alt="" />
               <p>Python</p>
             </div>
           </div>
           <div class="icons-gruop">
-            <div class="php icons">
+            <div class="php icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="300">
               <img class="img-icon" src="./assets/icon/php.png" alt="" />
               <p>PHP</p>
             </div>
-            <div class="mysql icons">
+            <div class="mysql icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="450">
               <img class="img-icon" src="./assets/icon/mysql.png" alt="" />
               <p>MySQL</p>
             </div>
-            <div class="p_sql icons">
+            <div class="p_sql icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="600">
               <img class="img-icon" style="background-color: white;border-radius:10%" src="./assets/icon/postgreSql.png" alt="" />
               <p>PostgreSQL</p>
             </div>
@@ -207,22 +285,42 @@
       </div> -->
 
         <div class="tools">
-            <h1 style="justify-content:center;display: flex; margin: 30px 0 10px 0" class="w">TOOLS</h1>
+            <h1 style="justify-content:center;display: flex; margin: 30px 0 10px 0" class="w" 
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="500">TOOLS</h1>
 
           <div class="icons-gruop">
-            <div class="vsc icons">
+            <div class="vsc icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="150">
               <img class="img-icon" style="background-color: white; border-radius:8px" src="./assets/tools/vsc.png" alt="" />
               <p class="w">Visual Studio</p>
             </div>
-            <div class="mc-vsc icons">
+            <div class="mc-vsc icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="300">
               <img class="img-icon" style="background-color: white; border-radius:8px" src="./assets/tools/mc-vsc.png" alt="" />
               <p class="w">Microsoft Visual Studio</p>
             </div>
-            <div class="navicats icons">
+            <div class="navicats icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="450">
               <img class="img-icon" src="./assets/tools/navicats.png" alt="" />
               <p class="w">Navicat</p>
             </div>
-            <div class="pst icons">
+            <div class="pst icons"
+            data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="600">
                 <img class="img-icon" src="./assets/tools/PostMan.png" alt="" />
                 <p class="w">PostMan</p>
               </div>
@@ -233,7 +331,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </>
     <div
       class="git"
       style="
@@ -243,11 +341,21 @@
         margin: 30px 0 10px 0;
       "
     >
-      <h1 class="w">GitHub</h1>
+      <h1 class="w" 
+      data-aos="fade-lefft"
+      data-aos-offset="200"
+      data-aos-delay="500"
+      data-aos-duration="500"
+      >GitHub</h1>
 
-      <div class="p_sql icons">
+      <div onclick="navigator.gitUrl()" class="p_sql icons" 
+      data-aos="flip-right"
+      data-aos-offset="200"
+      data-aos-delay="500"
+      data-aos-duration="500">
         <img class="git-icon" src="./assets/icon/git qr.png" alt="" />
-        <p class="w">GitHub QRCode</p>
+        <p class="w">Click the QR to access the page</p>
+        
       </div>
     </div>
 

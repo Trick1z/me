@@ -5,9 +5,17 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: radial-gradient(circle, rgba(113, 14, 138, 0.6) 0%,
-            /* สีม่วงอ่อนตรงกลาง */
-            rgba(0, 0, 0, 1) 70%);
+
+
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/gregoire-jeanneau-9sxeKzuCVoE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+
     color: white;
     font-family: Arial, sans-serif;
     font-size: 24px;
@@ -36,11 +44,14 @@ body {
             flex-direction: column;
             align-items: stretch;
 
+
+
             .cer-img {
                 border-radius: 10px;
                 margin: 20px 0;
                 box-shadow: 4px 4px 3px #b8b8b8;
             }
+
             .cer-img:hover {
                 border-radius: 10px;
                 margin: 20px 0;
@@ -48,6 +59,26 @@ body {
                 transition: 1s;
             }
 
+
+
         }
     }
+}
+
+.button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to right, #062744, #010d1d);
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
 }
