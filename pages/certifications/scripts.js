@@ -11,9 +11,10 @@ function PageNavigator() {
   this.certifications = function () {
     return (window.location.href = "index.html");
   };
-  this.portFolio = function () {
-    return (window.location.href = "../portFolio/index.html");
+  this.Activities = function () {
+    return (window.location.href = "../activities/index.html");
   };
+
 }
 
 const navigator = new PageNavigator();

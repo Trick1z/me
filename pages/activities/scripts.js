@@ -14,7 +14,11 @@ function PageNavigator() {
   this.portFolio = function () {
     return (window.location.href = "index.html");
   };
-
+  this.top = function () {
+    return document.getElementById("top").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 }
 
 let navigator = new PageNavigator();

@@ -11,8 +11,8 @@ function PageNavigator() {
   this.certifications = function () {
     return (window.location.href = "./pages/certifications/index.html");
   };
-  this.portFolio = function () {
-    return (window.location.href = "./pages/portFolio/index.html");
+  this.Activities = function () {
+    return (window.location.href = "./pages/activities/index.html");
   };
   this.gitUrl = function () {
     return window.open("https://github.com/Trick1z", "_blank");
