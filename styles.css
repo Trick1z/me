@@ -289,13 +289,21 @@ body {
     position: fixed;
     z-index: 2;
     width: 100%;
-    background: linear-gradient(to right, #062744, #010d1d);
+    height: 100%;
+    max-height: 50px;
+
+    background: linear-gradient(to right, (#062744, 0.5), (#010d1d, 0.5));
     margin: 4px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px 0;
+    backdrop-filter: blur(10px);
+    /* เพิ่มฟิลเตอร์เบลอ */
 }
+
+
+
 
 .top-cards {
     display: flex;
@@ -365,15 +373,17 @@ body {
         padding: 20px;
     }
 
-    .nav{
-        margin: 10.5px 0;
+    .nav {
+        /* margin: 10.5px 0; */
+        margin: -10px;
+        padding: 17px 0;
     }
 
     .container {
         width: 90%;
         margin: 0 auto;
         /* Center the container */
-        
+
     }
 
     .aboutMe {
@@ -427,8 +437,9 @@ body {
 }
 
 
+
 /* Tablets (768px - 1024px) */
-@media screen and ( max-width: 1333px) {
+@media screen and (max-width: 1333px) {
     .container {
         width: 10%;
         margin: 0 auto;
@@ -437,6 +448,10 @@ body {
             width: 102.4%;
             /* margin: ; */
         }
+    }
+    .nav {
+        margin: -20px 0 0 0;
+        padding: 22px 0;
     }
 
     .resume {
@@ -480,7 +495,10 @@ body {
         font-size: 24px;
         /* Default text size */
     }
-
+.nav{
+    margin: -20px 0 0 0;
+    padding: 22px 0;
+}
 
     .container {
         width: 50%;

@@ -73,12 +73,24 @@ body {
 
 .nav {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
-    background: linear-gradient(to right, #062744, #010d1d);
-    margin: 4px 0;
+    height: 100%;
+    max-height: 50px;
+
+    background: linear-gradient(to right, (#062744, 0.9), (#010d1d, 0.9));
+    margin: -20px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
+    padding: 22px 0;
+    backdrop-filter: blur(10px);
+    /* เพิ่มฟิลเตอร์เบลอ */
+
 }
+
+
+/* 
+.nav-link {
+    color: #0c66e9;
+} */

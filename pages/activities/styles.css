@@ -42,14 +42,19 @@ body {
     position: fixed;
     z-index: 2;
     width: 100%;
-    background: linear-gradient(to right, #062744, #010d1d);
-    margin: 4px 0;
+    height: 100%;
+    max-height: 50px;
+
+    background: linear-gradient(to right, (#062744, 0.5), (#010d1d, 0.5));
+    margin: -20px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
-}
+    padding: 22px 0;
+    backdrop-filter: blur(10px);
+    /* เพิ่มฟิลเตอร์เบลอ */
 
+}
 .cards-group {
     margin: 0 0 50px 0;
     display: grid;
@@ -65,6 +70,7 @@ body {
         display: flex;
         align-items: center;
         max-height: fit-content;
+        width: 36rem;
 
 
         .img {
@@ -106,12 +112,34 @@ body {
 
 .btt:hover {
     text-shadow: 2px 2px 1rem white;
-    font-size: 30px; 
+    font-size: 30px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 781px) {
+    body {
+        
+
+        .cards-group {
+
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+
+            .card {
+
+                width: 20rem;
+
+            }
+
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 1364px) {
     .cards-group {
- 
+
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
