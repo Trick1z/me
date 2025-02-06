@@ -14,6 +14,9 @@ function PageNavigator() {
   this.portFolio = function () {
     return (window.location.href = "index.html");
   };
+  // this.Projects = function () {
+  //   return (window.location.href = "../projects/index.html");
+  // };
   this.top = function () {
     return document.getElementById("top").scrollIntoView({
       behavior: "smooth",

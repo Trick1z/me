@@ -14,6 +14,9 @@ function PageNavigator() {
   this.Activities = function () {
     return (window.location.href = "./pages/activities/index.html");
   };
+  // this.Projects = function () {
+  //   return (window.location.href = "./pages/projects/index.html");
+  // };
   this.gitUrl = function () {
     return window.open("https://github.com/Trick1z", "_blank");
   };
@@ -30,7 +33,7 @@ function downloadPDF() {
       .then((blob) => {
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob); // Create a URL for the Blob
-        link.download = "Portfolio.pdf"; // Name the downloaded file
+        link.download = "resume.pdf"; // Name the downloaded file
         link.click(); // Trigger the download
       })
       .catch((error) => console.error("Error downloading the PDF:", error));

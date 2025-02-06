@@ -1,0 +1,486 @@
+/* body {
+
+    margin: 20px 0;
+    padding: 20px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url('./assets/gregoire-jeanneau-9sxeKzuCVoE-unsplash.jpg');
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    color: white;
+    font-family: Arial,
+        sans-serif;
+    font-size: 24px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    .w {
+        color: white;
+    }
+
+    .container {
+        background-color: white;
+        width: 50.06rem;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px rgb(238, 238, 238);
+
+
+        .imgs {
+            border-radius: 10px;
+            width: 50rem;
+            left: -10px;
+            height: auto;
+            position: relative;
+        }
+
+
+    }
+
+
+    .button {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+    }
+
+    .button:hover {
+
+        background-color: #0d6efd;
+        color: white;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        width: 70rem;
+        color: white;
+
+        h1 {
+            margin: 5px 0;
+        }
+
+        h6 {
+            margin: 10px 0;
+        }
+    }
+
+    .empty {
+        padding: 5rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons-gruop {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .img-icon {
+        width: 4rem;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    .git-icon {
+        width: 16rem;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    .skill-tools {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: nowrap;
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: stretch;
+        }
+    }
+
+
+}
+
+.nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to right, #062744, #010d1d);
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.top-cards {
+    display: flex;
+
+
+}
+
+.glow {
+    color: white;
+}
+
+.glow:hover {
+    text-shadow: 0 0 30px #ffffff;
+}
+ */
+
+
+
+
+
+/* new */
+/* Base Styles (for desktop and large screens) */
+body {
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../../assets/gregoire-jeanneau-9sxeKzuCVoE-unsplash.jpg');
+    height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.w {
+    color: white;
+}
+
+.container {
+    background-color:transparent;
+    width: 50.06rem;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(238, 238, 238); */
+    margin: 0 auto;
+    margin-top: 100px;
+    
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* background-color: white; */
+    
+    .card{
+        margin: 10px 10px;
+    }
+}
+.imgs {
+    border-radius: 10px;
+    width: 50rem;
+    height: auto;
+    position: relative;
+}
+
+.button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 70rem;
+    color: white;
+}
+
+.aboutMe h1 {
+    margin: 5px 0;
+}
+
+.aboutMe h6 {
+    margin: 10px 0;
+}
+
+.empty {
+    padding: 5rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-gruop {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-icon {
+    width: 4rem;
+    height: auto;
+    margin: 0 20px;
+}
+
+.git-icon {
+    width: 16rem;
+    height: auto;
+    margin: 0 20px;
+}
+
+.skill-tools {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+
+
+
+.nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+
+    background: linear-gradient(to right, (#062744, 0.5), (#010d1d, 0.5));
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    backdrop-filter: blur(10px);
+    /* เพิ่มฟิลเตอร์เบลอ */
+}
+
+
+
+
+.top-cards {
+    display: flex;
+}
+
+.glow {
+    color: white;
+}
+
+.glow:hover {
+    text-shadow: 0 0 30px #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+        padding: 10px;
+        display: flex;
+    }
+
+    .resume {
+        width: 120%;
+        /* width adjusted for large screens */
+        padding: 20px;
+    }
+
+    .nav {
+        /* margin: 10.5px 0; */
+        margin: -10px;
+        padding: 17px 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        /* Center the container */
+
+    }
+
+    .aboutMe {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        /* Ensure it's centered */
+    }
+
+    .img-icon {
+        width: 1rem;
+        margin: 0 10px;
+    }
+
+    .git-icon {
+        width: 12rem;
+    }
+
+    /* .skill-tools {
+        width: 20%; 
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto; 
+    } */
+    .skill-tools {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+
+        .skill {
+            .icons-gruop {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    /* .git-frame {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+
+   
+    } */
+
+    .button {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        /* Center buttons */
+    }
+
+    .empty {
+        padding: 2rem;
+    }
+}
+
+
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1333px) {
+    .container {
+        width: 10%;
+        margin: 0 auto;
+
+        .imgs {
+            width: 102.4%;
+            /* margin: ; */
+        }
+    }
+
+    .nav {
+        margin: -20px 0 0 0;
+        padding: 22px 0;
+    }
+
+    .resume {
+        width: 80%;
+        /* width adjusted for large screens */
+        padding: 20px;
+    }
+
+    .aboutMe {
+        width: 85%;
+        /* 85% width for about section */
+        padding: 15px;
+    }
+
+    .img-icon {
+        width: 3.5rem;
+        /* Adjust icon size for tablets */
+        margin: 0 40px;
+    }
+
+    .git-icon {
+        width: 14rem;
+        /* Adjust Git icon size */
+    }
+
+    .skill-tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        flex-direction: row;
+        /* Horizontal layout for buttons */
+    }
+}
+
+/* Large Screens (Desktop) */
+@media screen and (min-width: 1335px) {
+    body {
+        font-size: 24px;
+        /* Default text size */
+    }
+
+    .nav {
+        margin: -20px 0 0 0;
+        padding: 22px 0;
+    }
+
+    .container {
+        width: 50%;
+        /* Fixed width for large screens */
+        margin: 0 auto;
+    }
+
+    .aboutMe {
+        width: 70%;
+        /* width adjusted for large screens */
+        padding: 20px;
+    }
+
+    .img-icon {
+        width: 4rem;
+        /* Default icon size */
+    }
+
+    .git-icon {
+        width: 16rem;
+        /* Default Git icon size */
+    }
+}
