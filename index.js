@@ -23,9 +23,8 @@ function PageNavigator() {
 }
 
 function downloadPDF() {
-  //  "./assets/downloads/PortFolio.pdf"
   this.resume = function () {
-    const pdfUrl = "./assets/downloads/resume.pdf"; // Path to your PDF file
+    const pdfUrl = "./assets/downloads/sorrajin.pdf"; // Path to your PDF file
 
     // Fetch the PDF file
     fetch(pdfUrl)
@@ -33,7 +32,7 @@ function downloadPDF() {
       .then((blob) => {
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob); // Create a URL for the Blob
-        link.download = "resume.pdf"; // Name the downloaded file
+        link.download = "sorrajin.pdf"; // Name the downloaded file
         link.click(); // Trigger the download
       })
       .catch((error) => console.error("Error downloading the PDF:", error));
